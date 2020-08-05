@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guilherme Web</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="{{ url_for('static',    filename='css/style.css') }}">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="static/images/guireis.png" alt="">
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#skill" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+   
+            <img src="static/images/logo2.png" alt="logo" class="intro__img">
+        </section>
+        
+        <!-- My skills -->
+        <section class="my-skills" id="skill">
+            <h2 class="section__title section__title--skills">What I do</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>ML + Statistics</h3>
+                    <p> Specialized in Machine Learning and Statistics, always improving my knowledge and understanding on the subject.</p>
+                    <p> Today the most difficult role in the market is to implement and generate value with the data and the models. So my main objective is to do everything to add value to the data.</p>
+                </div> <!-- / skills -->
+
+                <div class="skill">
+                    <h3>SQL + Visualization</h3>
+                    <p>In RDMS I work mainly with PostgreSQL and SQLServer, I've been developing in MongoDB. On Dashboard I like to work with Tableau and Power BI.</p>
+                </div> <!-- / service -->
+
+                <div class="skill">
+                    <h3>Cloud + Others</h3>
+                    <p>Cloud: Specialization in data engineer and ML at GCP. Following the path for solution architecture at AWS. Others: Spark, Docker, git, linux, H2O.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+
+            
+            <a href="/experience" class="btn">See More</a>
+        </section>
+        
+        
+
+         <!-- About me -->
+         <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Data Scientist and BI Analyst </p>
+            
+            <div class="about-me__body">
+                <p>Hey, thanks for visiting. I'm just a data enthusiast. During my graduation in mechanical engineering I worked a lot with data and programming, which aroused my desire to work and develop in this area. And so I have been increasingly specializing in what I really like.</p>
+                <p>I think because of the influence of my family, I am always concerned with the people beside me, the same happens in personal and professional projects that I participate in, I always try to share what I learn and expect the same from those who participate.</p>
+                <p>Hobbies: barbecue, music, craft beer, games, and developing things. </p>
+            </div>
+            
+            <img src="static/images/foto.jpeg" alt="foto" class="about-me__img">
+         </section>
+
+
+        
+       
+        
+        <!-- My projects -->
+        <section class="my-projects" id="projects">
+            <h2 class="section__title section__title--project">My projects</h2>
+            <p class="section__subtitle section__subtitle--project">A selection of my work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio1" class="portfolio__item" title="Recommendation System"> 
+                    <img src="static/images/recommendation.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolio2" class="portfolio__item" title="Using BERT for text analysis">
+                    <img src="static/images/nlp.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio3" class="portfolio__item" title="Sales predicting">
+                    <img src="static/images/sales.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="portfolio4" class="portfolio__item" title="Indirect method to obtain Nadal Value">
+                    <img src="static/images/train.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="portfolio5" class="portfolio__item" title="Web Portfolio">
+                    <img src="static/images/web.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="portfolio6" class="portfolio__item" title="Quantifie-self">
+                    <img src="static/images/quantifie.jpeg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:gui.reis1@hotmail.com" class="footer__link">gui.reis1@hotmail.com</a>
+            <p>+55 (027) 99878-0925</p>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/gui.reism/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://medium.com/@gui.reis1">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/guilhermereismendes/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/guireis1">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+        </footer>
+        
+        <script src="/static/JavaScript/index.js"></script>
+    </body>
+</html>
